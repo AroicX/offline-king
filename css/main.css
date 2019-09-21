@@ -173,7 +173,12 @@ svg{
     }
 
     .move-in{
-        margin-left: 0px !important;
+        margin-left: -35px !important;
+    }
+
+    .intro-card{
+        margin-left: auto;
+        margin-right: auto;  
     }
 
 }
