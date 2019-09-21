@@ -29,6 +29,34 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.intro-card{
+    width: 350px !important;
+    padding: 50px 10px;
+    text-align: center !important;
+
+
+}
+
+.intro-card img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-card button{
+    /* width: 30%; */
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px ;
+}
+
+.move-in{
+    margin-left: 200px !important;
+}
+
 .nav-link-svg{
     width: 20px;
     height: 20px;
@@ -142,6 +170,10 @@ svg{
         top: 0px;
         margin-top: -10px;
         right: 10px;
+    }
+
+    .move-in{
+        margin-left: 0px !important;
     }
 
 }
