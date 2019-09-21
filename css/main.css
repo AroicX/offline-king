@@ -29,12 +29,27 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.nav-link-svg{
+    width: 20px;
+    height: 20px;
+    /* fill: orange !important; */
+    filter: invert(0.5) sepia(1) saturate(1352) hue-rotate(282deg) brightness(119%) contrast(119%);
+    
+}
+
+svg{
+    fill: blue !important;
+    
+}
+
+
 .btn-purple-gradient {
     background: #a47af4;
     color: #fff;
 }
 
 .btn-rounded {
+    font-size: 11px;
     border-radius: 30px !important;
 }
 
