@@ -1,7 +1,7 @@
 :root {
     --blue: #4e73df;
     --indigo: #6610f2;
-    --purple: #a47af4;
+    --purple:  #6563eb;
     --pink: #e83e8c;
     --red: #e74a3b;
     --orange: #fd7e14;
@@ -29,7 +29,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.intro-card{
+.intro-card {
     width: 350px !important;
     padding: 50px 10px;
     text-align: center !important;
@@ -37,7 +37,7 @@
 
 }
 
-.intro-card img{
+.intro-card img {
     width: 150px;
     height: 150px;
     margin: 10px;
@@ -45,34 +45,53 @@
     margin-right: auto;
 }
 
-.intro-card button{
+.intro-card button {
     /* width: 30%; */
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 20px ;
+    padding: 10px 20px;
 }
 
-.move-in{
+.move-in {
     margin-left: 200px !important;
 }
 
-.nav-link-svg{
+.nav-link-svg {
     width: 20px;
     height: 20px;
-    /* fill: orange !important; */
-    filter: invert(0.5) sepia(1) saturate(1352) hue-rotate(282deg) brightness(119%) contrast(119%);
-    
+    filter: invert(0.5) sepia(1) saturate(1352) hue-rotate(270deg) brightness(119%) contrast(119%);
+
 }
 
-svg{
-    fill: blue !important;
-    
+.img-link-svg {
+    width: 10px;
+    height: 10px;
+    filter: invert(0.5) sepia(1) saturate(1352) hue-rotate(270deg) brightness(119%) contrast(119%);
+
 }
+
+.mini-logo{
+    display: none;
+}
+
+.active-mini{
+    display: block !important;
+}
+
+
 
 
 .btn-purple-gradient {
-    background: #a47af4;
+    transition: all 0.5s ease-in;
+    /* background-image: #6563eb; */
+    background-image: linear-gradient(-90deg, #6563eb, blue);
+    color: #fff;
+}
+.btn-purple-gradient:hover {
+    transition: all 0.5s ease-in-out;
+    font-size: 14px;
+   
     color: #fff;
 }
 
@@ -81,19 +100,19 @@ svg{
     border-radius: 30px !important;
 }
 
-.folder-card{
+.folder-card {
     text-align: center;
 }
 
-.box-folder  {
+.box-folder {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     text-align: center;
 }
 
- .img-grid {
-   margin: 5px !important;
+.img-grid {
+    margin: 5px !important;
     border-radius: 5px;
 }
 
@@ -107,11 +126,20 @@ svg{
     border-radius: 5px;
 }
 
+.card-video {
+    margin-top: -15px;
+    border-radius: 0px !important;
+    width: 100% !important;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+}
+
 .offline-king-header {
     color: var(--purple);
 }
 
-.offline-king-header-text{
+.offline-king-header-text {
     color: var(--purple);
     font-size: 11px;
     margin: 5px;
@@ -136,6 +164,7 @@ svg{
 }
 
 .sort-tabs ul li a {
+    font-size: 11px;
     color: #404040;
     text-decoration: none;
 }
@@ -175,11 +204,12 @@ svg{
     transition: all 0.7s ease-out;
 }
 
-.back-arrow:hover{
+.back-arrow:hover {
     text-decoration: none;
     transition: all 0.5s ease-in;
     font-size: 18px;
 }
+
 .left-arrow {
     text-decoration: none;
     position: absolute;
@@ -189,29 +219,30 @@ svg{
     transition: all 0.7s ease-out;
 }
 
-.left-arrow:hover{
+.left-arrow:hover {
     text-decoration: none;
     transition: all 0.5s ease-in;
     font-size: 18px;
 }
 
-.padding-0{
-    padding-right:0 !important;
-    padding-left:0 !important;
+.padding-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 .row.no-pad {
-    margin-right:0 !important;
-    margin-left:0 !important;
-  }
-  .row.no-pad > [class*='col-'] {
-    margin-right:0 !important;
-    margin-left:0 !important;
-    padding-right:0 !important;
-    padding-left:0 !important;
-  }
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
 
-.styled{
+.row.no-pad>[class*='col-'] {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.styled {
     position: relative;
     top: 0;
     left: 0;
@@ -222,10 +253,68 @@ svg{
     border-radius: 50%;
 }
 
+.upgrade-card {
+    margin: 10px !important;
+    text-align: center;
+    height: 350px;
+    position: relative;
+}
+
+.upgrade-card .card-body {
+    padding: 20px;
+}
+
+.upgrade-title {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.upgrade-title p {
+    /* text-transform: uppercase; */
+    font-size: 14px;
+}
+
+.upgrade-title p:nth-child(2) {
+    font-weight: bold;
+    font-size: 18px;
+    color: #00bc2c;
+}
+
+.upgrade-card .card-body ul {
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+.upgrade-card .card-body ul li {
+    margin: 5px;
+    color: #5a5c69;
+    list-style: none;
+    font-size: 11px;
+}
+
+.upgrade-card .card-body ul li img {
+    list-style: none;
+}
+
+.upgrade-btn {
+    font-size: 8px;
+    padding: 15px 35px !important;
+    text-transform: uppercase;
+}
+
+.centralize {
+    margin-top: 150px !important;
+}
+
 @media only screen and (min-width : 280px) and (max-width : 565px) {
 
     .sort-tabs ul {
         visibility: hidden;
+    }
+
+
+    .centralize {
+        margin-top: 0px !important;
     }
 
 
@@ -236,6 +325,7 @@ svg{
         margin-top: -10px;
         right: 10px;
     }
+
     .left-arrow {
         text-decoration: none;
         position: absolute;
@@ -244,52 +334,57 @@ svg{
         left: 10px;
     }
 
-    .move-in{
-        margin-left:  auto !important;
+    .move-in {
+        margin-left: auto !important;
         /* margin-right:  500px !important;  */
     }
 
-    .intro-card{
+    .intro-card {
         width: 300px !important;
         margin-left: -20px;
-        
+
     }
 
-    .team-grid{
-        margin-left: 50px !important ;
+    .team-grid {
+        margin-left: 50px !important;
         width: 80% !important;
         /* display: inline !important; */
     }
 
-    .team-grid .offline-king-header-text{
+    .team-grid .offline-king-header-text {
         color: var(--purple);
         font-size: 11px;
         margin: 5px;
         /* display: block; */
     }
 
-    .row-change{
+    .row-change {
         text-align: center !important;
         display: block !important;
     }
-    .row-change .sort-tabs ul{
+
+    .row-change .sort-tabs ul {
         visibility: visible;
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    .team-grid-3{
+    .team-grid-3 {
         width: 50% !important;
         margin-left: 100px !important;
     }
 
-    .row-change > [class*='col-'] {
-        margin-right:0 !important;
-        margin-left:0 !important;
-        padding-right:0 !important;
-        padding-left:0 !important;
-      }
-    
+    .row-change>[class*='col-'] {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .mini-logo{
+        display: block;
+    }
+
 
 }
 
@@ -304,5 +399,3 @@ svg{
 
 
 /*covent*/
-
-

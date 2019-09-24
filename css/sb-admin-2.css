@@ -13,7 +13,7 @@
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
-  --purple: #a47af4;
+  --purple: #6563eb;
   --pink: #e83e8c;
   --red: #e74a3b;
   --orange: #fd7e14;
@@ -5620,7 +5620,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 500px auto;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
