@@ -1,7 +1,7 @@
 :root {
     --blue: #4e73df;
     --indigo: #6610f2;
-    --purple:  #6563eb;
+    --purple: #6563eb;
     --pink: #e83e8c;
     --red: #e74a3b;
     --orange: #fd7e14;
@@ -35,6 +35,12 @@
     text-align: center !important;
 
 
+}
+
+.settings {
+    position: absolute !important;
+    bottom: 70px !important;
+    left: 0px !important;
 }
 
 .intro-card img {
@@ -71,11 +77,11 @@
 
 }
 
-.mini-logo{
+.mini-logo {
     display: none;
 }
 
-.active-mini{
+.active-mini {
     display: block !important;
 }
 
@@ -88,10 +94,11 @@
     background-image: linear-gradient(-90deg, #6563eb, blue);
     color: #fff;
 }
+
 .btn-purple-gradient:hover {
     transition: all 0.5s ease-in-out;
     font-size: 14px;
-   
+
     color: #fff;
 }
 
@@ -306,8 +313,204 @@
     margin-top: 150px !important;
 }
 
+/* login */
+
+
+
+.wrapper{
+    display: flex;
+}
+.left-side{
+    position: relative;
+    width: 50% !important;
+    top: 100px;
+    left: 100px;
+}
+.right-side{
+    width: 50% !important;
+    /* background-image: url('../img/yourdesign.jpg'); */
+    top: 100px;
+    right: 0px;
+}
+.card-login {
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-login .card-footer {
+
+    background-color: #fff !important;
+
+}
+
+.label-custom {
+    float: left;
+    margin: 10px 0px;
+    display: block;
+}
+
+.input-group-prepend {
+    background: red !important;
+    border-radius: 50% !important;
+}
+
+.form-input {
+
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    position: relative;
+}
+
+.form-icon {
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(-90deg, #6563eb, blue);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 2px;
+    position: relative;
+}
+
+.form-icon i {
+    width: 20px;
+    height: 20px;
+    margin-top: 6px !important;
+    margin: auto;
+    filter: brightness(0) invert(1);
+
+}
+
+.custom-control {
+    border: 0px none !important;
+    border-radius: 0px !important;
+    outline: none !important;
+}
+
+.pad-2{
+    margin-top: 5px;
+    padding: 10px 35px !important;
+}
+
+
+.setting-form-label{
+    font-size: 11px;
+    color: #999;
+}
+
+.settings-form{
+    width: 100%;
+    padding: 2px 0px;
+    /* border: 1px solid #6610f2; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.setting-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(-90deg, #6563eb, blue);
+    padding: 8px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+.settings-form input{
+    margin-left: 30px;
+    width: 220px;  
+    border: none;
+    font-size: 11px;
+    color: #999;
+    padding: 10px 15px;
+    outline: none;  
+}
+
+.setting-image{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.setting-image p{
+   font-size: 12px;
+   color: #999;
+
+}
+
+.setting-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.invite-settings{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    vertical-align: middle;
+}
+.invite-settings p{
+   font-size: 13px;
+   margin-top: 10px;
+}
+
+.invite-input{
+    width: 30%;
+    height: 40px;
+    padding: 2px 0px;
+    /* border: 1px solid #6610f2; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.invite-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(-90deg, #6563eb, blue);
+    padding: 8px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+
+.invite-input input{
+    margin-left: 30px;
+    width: 220px;  
+    border: none;
+    font-size: 11px;
+    color: #999;
+    padding: 10px 15px;
+    outline: none;  
+}
+
 @media only screen and (min-width : 280px) and (max-width : 565px) {
 
+    .invite-settings{
+        display: block !important;
+    }
+    .invite-input{
+        width: auto !important;
+    }
     .sort-tabs ul {
         visibility: hidden;
     }
@@ -381,8 +584,32 @@
         padding-left: 0 !important;
     }
 
-    .mini-logo{
+    .mini-logo {
         display: block;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
+    .left-side {
+        visibility: hidden;
+    }
+
+    .right-side {
+        width: 100% !important;
+        /* background-image: url('../img/yourdesign.jpg'); */
+        top: 100px;
+        padding: 20px;
+        right: 0px;
+    }
+
+    .card-login {
+        width: 400px;
+        text-align: center;
+        padding: 10px;
+        margin-left: -200px !important;
+        left: 0px;
     }
 
 
