@@ -39,7 +39,7 @@
 
 .settings {
     position: absolute !important;
-    bottom: 70px !important;
+    bottom: 20px !important;
     left: 0px !important;
 }
 
@@ -330,8 +330,8 @@
 .screen {
     
     width: 50%;
-    height: 700px;
-    padding: 10px;
+    height: auto;
+    padding: 50px 10px;
 }
 
 .screen:nth-child(2) {
@@ -484,11 +484,17 @@
       
     }
 
+    .register-card{
+        width: 100% !important;
+        left: 0px !important;
+        margin-left: 0px !important;
+    }
+
     .screen {
         display: none;
         width: auto;
         height: 700px;
-        padding: 10px;
+        padding: 50px 10px;
     }
     
     .screen:nth-child(2) {
